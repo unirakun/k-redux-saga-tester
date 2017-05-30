@@ -1,0 +1,78 @@
+{
+  "name": "trampss-redux-saga-tester",
+  "version": "1.0.0",
+  "description": "Test your sagas (redux-saga) with ease, compatible with Jest snapshots !",
+  "main": "lib/index.js",
+  "repository": "git@github.com:Trampss/trampss-redux-saga-tester.git",
+  "author": "Fabien JUIF <fabien.juif@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint:js": "eslint --ext js,jsx src",
+    "lint": "npm-run-all --parallel lint:*",
+    "build": "rollup -c ./misc/rollup.config.js",
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "coveralls": "^2.13.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "jest": "^20.0.4",
+    "npm-run-all": "^4.0.2",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "jest": {
+    "transform": {
+      ".*": "./node_modules/babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "plugins": [],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb"
+    ],
+    "plugins": [
+      "babel"
+    ],
+    "globals": {
+      "fetch": false
+    },
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "semi": [
+        2,
+        "never"
+      ]
+    }
+  }
+}
