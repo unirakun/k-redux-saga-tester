@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`effects modified next should return mocked informations 1`] = `
+Object {
+  "raw": Object {
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": true,
+    },
+  },
+  "value": Object {
+    "first": "mock",
+  },
+}
+`;
+
+exports[`effects modified next should return mocked informations 2`] = `
+Object {
+  "raw": Object {
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": true,
+    },
+  },
+  "value": Object {
+    "first": "mock",
+  },
+}
+`;
+
+exports[`effects modified next should return mocked informations 3`] = `
+Object {
+  "raw": Object {
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": true,
+    },
+  },
+  "value": Array [
+    Object {
+      "second": "mock",
+    },
+    Object {
+      "should": "be printed",
+    },
+  ],
+}
+`;
+
+exports[`effects modified next should return mocked informations 4`] = `
+Object {
+  "raw": Object {
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "SELECT": true,
+    },
+  },
+  "value": Object {
+    "select": "mock too",
+  },
+}
+`;
+
+exports[`effects modified next should return undefined value if there is no mock 1`] = `
+Object {
+  "raw": Object {
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": true,
+    },
+  },
+  "value": undefined,
+}
+`;
+
+exports[`effects modified next should return undefined value if there is no mock 2`] = `
+Object {
+  "raw": Object {
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "SELECT": true,
+    },
+  },
+  "value": undefined,
+}
+`;

@@ -10,7 +10,8 @@
     "lint:js": "eslint --ext js,jsx src",
     "lint": "npm-run-all --parallel lint:*",
     "build": "rollup -c ./misc/rollup.config.js",
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -28,6 +29,27 @@
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1"
+  },
+  "jest": {
+    "transform": {
+      ".*": "./node_modules/babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015", { "modules": false }
+      ]
+    ],
+    "plugins": [
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
   },
   "eslintConfig": {
     "parser": "babel-eslint",

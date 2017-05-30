@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`core with middleware should transform next values by middlewares 1`] = `
+Array [
+  Object {
+    "done": false,
+    "test": "yeah this is a simple mock",
+    "test2": "yeah this is a simple mock",
+    "value": "foo",
+  },
+  Object {
+    "done": false,
+    "test": "yeah this is a simple mock",
+    "test2": "yeah this is a simple mock",
+    "value": "bar",
+  },
+  Object {
+    "done": false,
+    "test": "yeah this is a simple mock",
+    "test2": "yeah this is a simple mock",
+    "value": "bar",
+  },
+  Object {
+    "done": true,
+    "test": "yeah this is a simple mock",
+    "test2": "yeah this is a simple mock",
+    "value": undefined,
+  },
+]
+`;
+
+exports[`core without middlewares/mocks should returns all generator values 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": "foo",
+  },
+  Object {
+    "done": false,
+    "value": "bar",
+  },
+  Object {
+    "done": false,
+    "value": "bar",
+  },
+  Object {
+    "done": true,
+    "value": undefined,
+  },
+]
+`;
