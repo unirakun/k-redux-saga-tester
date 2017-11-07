@@ -11,7 +11,8 @@
     "lint": "npm-run-all --parallel lint:*",
     "build": "rollup -c ./misc/rollup.config.js",
     "test": "jest",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "ci": "npm-run-all --parallel coveralls lint"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
