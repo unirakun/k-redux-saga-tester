@@ -5,7 +5,7 @@ import babel from 'rollup-plugin-babel'
 export default {
   entry: 'src/index.js',
   dest: 'lib/index.js',
-  moduleName: 'trampss-redux-saga-tester',
+  moduleName: 'k-redux-saga-tester',
   format: 'umd',
   plugins: [
     resolve(),
