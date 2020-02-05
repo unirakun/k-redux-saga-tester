@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Test your sagas (redux-saga) with ease, compatible with Jest snapshots !",
   "main": "lib/index.js",
-  "repository": "git@github.com:alakarteio/k-redux-saga-tester.git",
+  "repository": "git@github.com:unirakun/k-redux-saga-tester.git",
   "author": "Fabien JUIF <fabien.juif@gmail.com>",
   "license": "MIT",
   "scripts": {
