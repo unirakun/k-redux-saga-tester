@@ -1,5 +1,5 @@
 # k-redux-saga-tester
-[![CircleCI](https://circleci.com/gh/alakarteio/k-redux-saga-tester.svg?style=shield)](https://circleci.com/gh/alakarteio/k-redux-saga-tester) [![Coverage Status](https://coveralls.io/repos/github/alakarteio/k-redux-saga-tester/badge.svg?branch=master)](https://coveralls.io/github/alakarteio/k-redux-saga-tester?branch=master) [![NPM Version](https://badge.fury.io/js/k-redux-saga-tester.svg)](https://www.npmjs.com/package/k-redux-saga-tester)
+[![CircleCI](https://circleci.com/gh/unirakun/k-redux-saga-tester.svg?style=shield)](https://circleci.com/gh/unirakun/k-redux-saga-tester) [![Coverage Status](https://coveralls.io/repos/github/unirakun/k-redux-saga-tester/badge.svg?branch=master)](https://coveralls.io/github/unirakun/k-redux-saga-tester?branch=master) [![NPM Version](https://badge.fury.io/js/k-redux-saga-tester.svg)](https://www.npmjs.com/package/k-redux-saga-tester)
 
 Test your sagas (redux-saga) with ease, compatible with Jest snapshots!
 
@@ -24,10 +24,10 @@ describe('mySaga', () => {
 })
 ```
 
-# About ![alakarteio](http://alakarte.io/assets/img/logo.markdown.png)
-**alakarteio** is created by two passionate french developers.
+# About uni rakun ![unirakun](https://avatars3.githubusercontent.com/u/26111459?s=50&v=4)
+**uni rakun** is created by two passionate french developers.
 
-Do you want to contact them ? Go to their [website](http://alakarte.io)
+Do you want to contact them ? Go to their [website](https://unirakun.fr)
 
 <table border="0">
  <tr>
